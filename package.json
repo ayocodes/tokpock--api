@@ -1,0 +1,38 @@
+{
+  "name": "fingerprinting",
+  "version": "0.1.0",
+  "description": "Prevent an account from establishing connection on multiple devices at the same time.",
+  "scripts": {
+    "build": "yarn tsc",
+    "start": "node lib/index.js",
+    "dev": "concurrently \"yarn tsc --watch\" \"nodemon -q lib/src/index.js\""
+  },
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.14",
+    "@types/ws": "^8.5.3",
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.7.3",
+    "@types/nodemailer": "^6.4.6"
+
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinpraises/fingerprinting.git"
+  },
+  "author": "kelvin praises",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelvinpraises/fingerprinting/issues"
+  },
+  "homepage": "https://github.com/kelvinpraises/fingerprinting#readme"
+}
