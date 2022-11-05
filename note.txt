@@ -1,0 +1,2 @@
+Expectations:
+1. create a mailing endpoint
